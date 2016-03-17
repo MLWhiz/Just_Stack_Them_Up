@@ -4,13 +4,13 @@ http://mlwave.com/kaggle-ensembling-guide/
 
 # Usage
 
+<pre><code>
 base_classifiers = [[RandomForestClassifier(n_estimators= 2, criterion = 'entropy'),"RF_ENTROPY"],                                                          [RandomForestClassifier(n_estimators = 2, criterion = 'gini'),"RF_GINI"]],
 
 blender_Classifiers =[[RandomForestClassifier(n_estimators = 2, criterion = 'entropy'),"BLEND_RF_ENTROPY"],                                                          [RandomForestClassifier(n_estimators = 2, criterion = 'gini'),"BLEND_RF_GINI"]]
 
 #Create a stacker obj
 
-<pre><code>
 stack1 = stacker(x_test = X_test,x_train = X_train,y_train =y_train,id_test=id_test, base_clf_list=base_classifiers,blender_clf_list =                   blender_Classifiers)
 </pre></code>
 Here the id_test is the ID column of a test dataset that will be required.
@@ -22,7 +22,7 @@ stack1.train_all_base_classifiers()
 </pre></code>
 
 #OUTPUT
-<p>
+<pre><code>
 Training classifier [0] [RF_ENTROPY]
 Fold [0]
 auc_score for fold: 0.601556465779
@@ -47,7 +47,7 @@ auc_score for fold: 0.593156671037
 Fold [4]
 auc_score for fold: 0.579752596971
 cv_score_mean: 0.593129923631 and cv_score_std: 0.00817897680863
-</p>
+</pre></code>
 
 # Train All blenders using:
 
@@ -61,7 +61,7 @@ stack1.train_all_blenders()
 stack1.find_cv_scores_all_blenders()
 </pre></code>
 
-<p>
+<pre><code>
 blender_Name: BLEND_RF_ENTROPY :
 Fold 1 CV Score: 0.602361151841
 Fold 2 CV Score: 0.625628341057
@@ -76,7 +76,7 @@ Fold 3 CV Score: 0.595923008772
 Fold 4 CV Score: 0.604254460162
 Fold 5 CV Score: 0.591763066213
 cv_score_mean: 0.600868296441 and cv_score_std: 0.00809205888706
-</p>
+</pre></code>
 
 # Print the object at anytime to see whats up with it.
 
@@ -84,7 +84,7 @@ cv_score_mean: 0.600868296441 and cv_score_std: 0.00809205888706
 print(stack1)
 </pre></code>
 
-<p>
+<pre><code>
 init:
 n_folds: 5 random_seed:0
 base classifiers:
@@ -133,5 +133,5 @@ fold_2_auc:0.614910113814
 fold_3_auc:0.595923008772
 fold_4_auc:0.604254460162
 fold_5_auc:0.591763066213
-</ps>
+</pre></code>
 
