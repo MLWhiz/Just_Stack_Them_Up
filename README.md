@@ -13,7 +13,8 @@ blender_Classifiers =[[RandomForestClassifier(n_estimators = 2, criterion = 'ent
 
 #Create a stacker obj
 
-stack1 = stacker(x_test = X_test,x_train = X_train,y_train =y_train,id_test=id_test, base_clf_list=base_classifiers,blender_clf_list =                   blender_Classifiers)
+stack1 = stacker(x_test = X_test,x_train = X_train,y_train =y_train,id_test=id_test, 
+base_clf_list=base_classifiers,blender_clf_list =blender_Classifiers)
 </pre></code>
 Here the id_test is the ID column of a test dataset that will be required.
 
