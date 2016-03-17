@@ -2,7 +2,8 @@
 A python implementation to add models using the stacking methodology. Highly influenced by a post from MLWave
 http://mlwave.com/kaggle-ensembling-guide/
 
-It is just a py script. Not perfect in any sense. Change according to need and ask for merge requests.
+It is just a py script. Not perfect in any sense.See the source for more options. 
+Change according to need and ask for merge requests.
 New to this so if did anything wrong. Create an issue. 
 Enjoy!!!
 
@@ -168,6 +169,7 @@ fold_5_auc:0.591763066213
 
 
 # Create final Kaggle Submission:
+You can also create weighted submission of all your blenders.See the source for params.
 <pre><code>
 stack1.get_weighted_blender_submission(submission_name= "unw_ble.csv")
 </code></pre>
