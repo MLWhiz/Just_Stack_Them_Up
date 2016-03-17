@@ -29,7 +29,6 @@ You can train all base classifiers and create blended_train and test dataset usi
 stack1.train_all_base_classifiers()
 </code></pre>
 
-
 #OUTPUT
 <pre><code>
 Training classifier [0] [RF_ENTROPY]
@@ -57,6 +56,26 @@ Fold [4]
 auc_score for fold: 0.579752596971
 cv_score_mean: 0.593129923631 and cv_score_std: 0.00817897680863
 </code></pre>
+
+# Or add individual Base Learners.
+<pre><code>
+stack1.add_base_classifer([RandomForestClassifier(n_estimators = 3, criterion = 'gini'),"RF_GINI"])
+
+Training classifier [1] [RF_GINI]
+Fold [0]
+auc_score for fold: 0.598224708298
+Fold [1]
+auc_score for fold: 0.592026100312
+Fold [2]
+auc_score for fold: 0.582395075357
+Fold [3]
+auc_score for fold: 0.593593668134
+Fold [4]
+auc_score for fold: 0.592920852134
+cv_score_mean: 0.591832080847 and cv_score_std: 0.005181679546
+
+</code></pre>
+
 
 
 # Train All blenders using:
