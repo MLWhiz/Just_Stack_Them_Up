@@ -17,7 +17,7 @@ You can train all base classifiers and create blended_train and test dataset usi
 stack1.train_all_base_classifiers()
 
 OUTPUT
--------------------------------------------------------
+
 Training classifier [0] [RF_ENTROPY]
 Fold [0]
 auc_score for fold: 0.601556465779
@@ -42,7 +42,7 @@ auc_score for fold: 0.593156671037
 Fold [4]
 auc_score for fold: 0.579752596971
 cv_score_mean: 0.593129923631 and cv_score_std: 0.00817897680863
-------------------------------------------------------------------
+
 Train All blenders using:
 
 stack1.train_all_blenders()
