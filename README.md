@@ -138,3 +138,7 @@ fold_4_auc:0.604254460162
 fold_5_auc:0.591763066213
 </pre></code>
 
+# Create final Kaggle Submission:
+<pre><code>
+stack1.get_weighted_blender_submission(submission_name= "unw_ble.csv")
+</code></pre>
