@@ -1,6 +1,8 @@
 # Just_Stack_Them_Up
 A python implementation to add models using the stacking methodology. Highly influenced by a post from MLWave
 http://mlwave.com/kaggle-ensembling-guide/
+and 
+https://github.com/log0/vertebral/blob/master/stacked_generalization.py
 
 It is just a py script. Not perfect in any sense.See the source for more options. 
 Change according to need and ask for merge requests.
