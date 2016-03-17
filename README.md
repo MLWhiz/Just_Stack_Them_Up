@@ -2,6 +2,10 @@
 A python implementation to add models using the stacking methodology. Highly influenced by a post from MLWave
 http://mlwave.com/kaggle-ensembling-guide/
 
+It is just a py script. Not perfect in any sense. Change according to need and ask for merge requests.
+New to this so if did anything wrong. Create an issue. 
+Enjoy!!!
+
 # Usage
 
 <pre><code>
@@ -84,7 +88,7 @@ Fold 3 CV Score: 0.595923008772
 Fold 4 CV Score: 0.604254460162
 Fold 5 CV Score: 0.591763066213
 cv_score_mean: 0.600868296441 and cv_score_std: 0.00809205888706
-</pre></code>
+</code></pre>
 
 # Print the object at anytime to see whats up with it.
 
