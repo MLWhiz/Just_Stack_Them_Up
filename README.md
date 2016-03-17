@@ -15,14 +15,16 @@ blender_Classifiers =[[RandomForestClassifier(n_estimators = 2, criterion = 'ent
 
 stack1 = stacker(x_test = X_test,x_train = X_train,y_train =y_train,id_test=id_test, 
 base_clf_list=base_classifiers,blender_clf_list =blender_Classifiers)
-</pre></code>
+</code></pre>
+
 Here the id_test is the ID column of a test dataset that will be required.
 
 You can train all base classifiers and create blended_train and test dataset using:
 
 <pre><code>
 stack1.train_all_base_classifiers()
-</pre></code>
+</code></pre>
+
 
 #OUTPUT
 <pre><code>
@@ -50,19 +52,22 @@ auc_score for fold: 0.593156671037
 Fold [4]
 auc_score for fold: 0.579752596971
 cv_score_mean: 0.593129923631 and cv_score_std: 0.00817897680863
-</pre></code>
+</code></pre>
+
 
 # Train All blenders using:
 
 <pre><code>
 stack1.train_all_blenders()
-</pre></code>
+</code></pre>
+
 
 # Find Cross Validation AUC score of all Blenders using:
 
 <pre><code>
 stack1.find_cv_scores_all_blenders()
-</pre></code>
+</code></pre>
+
 
 <pre><code>
 blender_Name: BLEND_RF_ENTROPY :
@@ -85,7 +90,7 @@ cv_score_mean: 0.600868296441 and cv_score_std: 0.00809205888706
 
 <pre><code>
 print(stack1)
-</pre></code>
+</code></pre>
 
 <pre><code>
 init:
@@ -136,7 +141,8 @@ fold_2_auc:0.614910113814
 fold_3_auc:0.595923008772
 fold_4_auc:0.604254460162
 fold_5_auc:0.591763066213
-</pre></code>
+</code></pre>
+
 
 # Create final Kaggle Submission:
 <pre><code>
