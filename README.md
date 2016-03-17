@@ -8,7 +8,8 @@ http://mlwave.com/kaggle-ensembling-guide/
 base_classifiers = [[RandomForestClassifier(n_estimators= 2, criterion = 'entropy'),"RF_ENTROPY"],
 [RandomForestClassifier(n_estimators = 2, criterion = 'gini'),"RF_GINI"]],
 
-blender_Classifiers =[[RandomForestClassifier(n_estimators = 2, criterion = 'entropy'),"BLEND_RF_ENTROPY"], [RandomForestClassifier(n_estimators = 2, criterion = 'gini'),"BLEND_RF_GINI"]]
+blender_Classifiers =[[RandomForestClassifier(n_estimators = 2, criterion = 'entropy'),"BLEND_RF_ENTROPY"],
+[RandomForestClassifier(n_estimators = 2, criterion = 'gini'),"BLEND_RF_GINI"]]
 
 #Create a stacker obj
 
